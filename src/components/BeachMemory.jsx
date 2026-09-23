@@ -1,3 +1,4 @@
+import FloatingHearts from './FloatingHearts';
 import { useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Heart, Waves } from 'lucide-react';
@@ -8,7 +9,7 @@ export default function BeachMemory({ celebrate }) {
   const [revealed, setRevealed] = useState(false);
   const lightbox=useRef(null);
   return (
-    <section className="section beach-section" id="ngwe-saung">
+    <section className="section beach-section" id="ngwe-saung"><FloatingHearts />
       <div className="ocean-light" aria-hidden="true" />
       <SectionHeading eyebrow="02 / SALT AIR & A LITTLE PIECE OF FOREVER">
         One Memory <em>I'll Always Keep</em>
@@ -78,3 +79,4 @@ export default function BeachMemory({ celebrate }) {
     </section>
   );
 }
+

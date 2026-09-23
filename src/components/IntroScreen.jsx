@@ -36,7 +36,7 @@ export default function IntroScreen({ onOpen }) {
         <em>
           <AnimatedWords text={config.nickname} />
         </em>
-        <span className="intro-white-heart">🤍</span>
+        <span className="intro-white-heart"><Heart size={27} fill="currentColor" aria-hidden="true" /></span>
       </motion.h1>
       <motion.button
         {...reveal(2.5)}

@@ -1,0 +1,77 @@
+/* Chocolate truffles, rose gold, and candlelit love letters. */
+:root{color-scheme:dark;--cocoa:#241510;--surface:#38221b;--cream:#f6e4d2;--muted:#d3b6a4;--rose:#edb0ad;--gold:#dfb785;--wine:#ab6465;--pink:#58332d;--ink:var(--cream);--champagne:var(--gold);color:var(--cream);background:var(--cocoa)}
+body{background:var(--cocoa);color:var(--cream)}
+::selection{background:#a65f65;color:#fff4e6}
+p{color:var(--muted)}
+em{color:var(--rose)}
+.pearl-intro{background:radial-gradient(ellipse at 50% 28%,#683f2b66,transparent 56%),radial-gradient(ellipse at 85% 85%,#793f4630,transparent 45%),linear-gradient(135deg,#21130f,#3a241b 60%,#291713);color:var(--cream)}
+.pearl-intro h1 em{color:#f0c3b4;text-shadow:0 5px 40px #d58f7630}
+.pearl-intro .intro-sentence,.pearl-intro .intro-note,.pearl-intro .eyebrow,.intro-corner{color:var(--muted)}
+.intro-orbit,.intro-orbit::before,.intro-orbit::after{border-color:#d9ac7d25}
+.intro-rose-medallion{box-shadow:0 0 0 7px #42281b,0 0 0 8px #bc916766,0 10px 45px #08030266}
+.intro-rose-medallion img{filter:sepia(.22) saturate(.75) brightness(.85)}
+.intro-white-heart{display:flex;justify-content:center;color:var(--rose);filter:drop-shadow(0 0 15px #dc8d8360);animation:heartbeat 3.5s ease-in-out infinite}
+.button,.pearl-intro .button,.button.light,.letter-open-button{background:linear-gradient(120deg,#c68a7c,#e2b18f);border-color:#d3a284;color:#2c1813;box-shadow:0 6px 24px #10080533}
+.button:hover,.pearl-intro .button:hover,.letter-open-button:hover{background:#efc5a4;color:#241510;box-shadow:0 8px 32px #c4887330}
+.masthead{border-color:#c79d7238;color:var(--cream)}
+.personal-hero{background:radial-gradient(ellipse at 15% 45%,#6a3d302e,transparent 60%)}
+.personal-hero h1,.personal-hero .hero-dedication{color:var(--cream)}
+.personal-hero .birthday-greeting,.personal-hero .nickname,.personal-hero .hero-handwritten{color:var(--rose)}
+.personal-hero .hero-personal-note,.personal-hero .scroll-note{color:var(--muted)}
+.hero-date-badge,.personal-hero .image-note{background:#462c21;color:#f3d2af;border:1px solid #c7976e66;box-shadow:0 12px 32px #0f070840}
+.personal-hero .hero-art>img{filter:sepia(.12) saturate(.7) brightness(.8)}
+.section .eyebrow,.beach-section .eyebrow{color:#dab795}
+.editorial-date,.birthday-date-section{background:linear-gradient(110deg,#3e281f,#302019);border-color:#ab7c5238}
+.date-display{border-color:#a8806145}
+.date-display time strong{background:linear-gradient(140deg,#f1d3ac,#c28b75);background-clip:text;color:transparent}
+.date-display time>span,.date-small,.date-editorial-copy .birthday-date-signoff{color:var(--muted)}
+.our-beginning{background:#291a14}
+.beginning-note{background:linear-gradient(145deg,#442d23,#322019);border-color:#bd906044;box-shadow:0 20px 55px #10080540}
+.beginning-note time,.beginning-note h3,.beginning-marker{color:var(--rose)}
+.beginning-note p,.date-connection{color:var(--muted)}
+.relationship-counter{background:linear-gradient(150deg,#332019,#42291e)}
+.live-counter{background:#291a1477;border-color:#b28a6144}
+.live-counter strong{color:#f5d4ad}.live-counter span,.birthday-days{color:var(--muted)}
+.beach-section{background:radial-gradient(ellipse at 80% 25%,#75463722,transparent 50%),linear-gradient(#281b15,#38231b 55%,#291a14)}
+.beach-section>.ocean-light{background:radial-gradient(ellipse at 20% 20%,#c6895730,transparent 55%);opacity:.45}
+.beach-name,.beach-reveal h3,.beach-reveal-button{color:var(--rose)}
+.beach-intro,.beach-reveal p{color:var(--muted)}
+.beach-album-note{color:var(--muted)!important}
+.beach-polaroid{background:#513729;border:1px solid #b8946844;box-shadow:0 18px 40px #0e070650}
+.beach-polaroid:hover{box-shadow:0 25px 50px #10070488}
+.polaroid-caption{color:#f0cfaa}
+.beach-polaroid .photo-surface{background:#2b1b14}
+.polaroid-number{background:#342119bb;color:#fae2c9}
+.gallery-section{background:#211610}
+.reasons-section{background:linear-gradient(140deg,#342018,#291914)}
+.reason-front{background:linear-gradient(140deg,#513228,#38221b);border-color:#b3865d66;color:#efb4aa}
+.reason-front::after{border-color:#d4a57725}
+.reason-front .tap-label,.reason-open-hint,.reason-number,.reveal-count{color:#e7c1a5}
+.reason-back{background:linear-gradient(145deg,#8c4f48,#56322a);border-color:#c58d7966;color:#ffeddd}
+.reason-progress-track{background:#674333}.reason-progress-track>span{background:#e4ad99}
+.letter-section{background:radial-gradient(ellipse at 50% 50%,#523229,#2d1b15)}
+.stationery{background:linear-gradient(145deg,#4d3427,#372218);border-color:#bf946955;box-shadow:0 20px 55px #10060555}
+.stationery::before{border-color:#d2ac7133}
+.stationery-top{border-color:#b1886138;color:#e4c19a}
+.stationery>p,.stationery p em,.stationery-bottom,.stationery .envelope-icon,.stationery .envelope-icon>svg:last-child{color:#edc2ad}
+.letter-paper{background:linear-gradient(100deg,#493225,#3b271d);border-color:#ba8f6155;border-top-color:#d4ac7b;color:#f7ddc2}
+.letter-paper p{color:#eed2b6}.letter-date{color:#d6b795}
+.love-heart-section{background:radial-gradient(ellipse at center,#6b383338,transparent 65%),#281912}
+.big-heart{color:#db9392;filter:drop-shadow(0 0 28px #e99b7944)}
+.big-heart::before,.big-heart::after{border-color:#e4b39455}
+.heart-message p,.wish-message p{color:#ecc5b2}
+.wish-section{background:radial-gradient(ellipse at 50% 35%,#513325,#302019)}
+.cake-scene{color:#ecc0a4}.cake-age{background:#4b3023;color:#ffe2ba}
+.surprise-section{background:radial-gradient(ellipse at 35% 20%,#81443944,transparent 50%),linear-gradient(135deg,#3e251b,#22130f)}
+.final-section,.cinematic-intro{background:radial-gradient(ellipse at 50% 20%,#61372855,transparent 65%),#1d120e}
+.progress-nav,.music-toggle,.music-panel{background:#38231df2;border-color:#c6987155;color:#f1ccb0;box-shadow:0 8px 28px #10060566}
+.progress-nav a{color:#e3bca2}.progress-nav a.active{background:#b67868;color:#21130f}
+.music-play{color:#f1ccb0}.music-panel p{color:var(--muted)}
+.volume-label input{accent-color:#e3ac95}
+.lightbox::backdrop{background:#1d100bec}.beach-lightbox .lightbox-close{background:#493024}
+.reading-progress{background:linear-gradient(90deg,#bf8168,#edb4ac,#ecc895)}
+.floating-hearts,.floating-hearts.on-dark{color:#e7a995}
+.floating-hearts>svg{animation-name:chocolate-hearts;filter:drop-shadow(0 0 5px #d8906830);stroke-width:1}
+@keyframes chocolate-hearts{0%{transform:translate3d(0,0,0) rotate(-12deg)}50%{transform:translate3d(var(--heart-drift),-55vh,0) rotate(9deg)}100%{transform:translate3d(0,-115vh,0) rotate(-8deg)}}
+@media(max-width:760px){.floating-hearts>svg:nth-child(n+9){display:none}}
+@media(prefers-reduced-motion:reduce){.intro-white-heart{animation:none}.floating-hearts{display:none}}

@@ -1,3 +1,4 @@
+import FloatingHearts from './FloatingHearts';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart } from 'lucide-react';
@@ -7,7 +8,7 @@ export default function LoveHeart({ celebrate }) {
   const [count, setCount] = useState(0);
   const messages = siteConfig.heartMessages;
   return (
-    <section className="section love-heart-section">
+    <section className="section love-heart-section"><FloatingHearts />
       <SectionHeading eyebrow="05 / SOMETHING IMPOSSIBLE TO MEASURE">
         Do you know how much <em>I love you?</em>
       </SectionHeading>
@@ -38,3 +39,4 @@ export default function LoveHeart({ celebrate }) {
     </section>
   );
 }
+

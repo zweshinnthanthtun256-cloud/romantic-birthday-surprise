@@ -7,10 +7,11 @@ export default function FloatingHearts({ dark = false }) {
     () =>
       Array.from({ length: 12 }, (_, i) => ({
         left: Math.random() * 100,
-        size: 7 + Math.random() * 13,
-        duration: 15 + Math.random() * 15,
+        size: 12 + Math.random() * 22,
+        duration: 20 + Math.random() * 16,
         delay: -Math.random() * 30,
-        opacity: 0.08 + Math.random() * 0.16,
+        opacity: 0.14 + Math.random() * 0.18,
+        drift: (i % 2 ? 1 : -1) * (25 + Math.random() * 45),
         spark: i % 3 === 0,
       })),
     [],
@@ -29,6 +30,8 @@ export default function FloatingHearts({ dark = false }) {
               animationDuration: `${p.duration}s`,
               animationDelay: `${p.delay}s`,
               opacity: p.opacity,
+              '--heart-drift': `${p.drift}px`,
+              fill: p.spark || i % 2 ? 'none' : 'currentColor',
             }}
           />
         );
