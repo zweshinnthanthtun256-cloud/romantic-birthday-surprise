@@ -1,0 +1,35 @@
+export const siteConfig = {
+  girlfriendName: 'Her Name',
+  boyfriendName: 'Your Name',
+  age: 22,
+  birthday: '',
+  relationshipStartDate: '',
+  heroMessage:
+    "Today isn't just another day. It's the day the person who makes my world brighter was born.",
+  finalMessage: 'You are one of the most beautiful parts of my life.',
+  music: '/music/our-song.mp3',
+  heroImage: '/images/romantic-roses.jpg',
+  letter: [
+    'There are so many things I could say today, but I don’t think words will ever completely explain how much you mean to me.',
+    'Thank you for every smile, every conversation, every memory, and every little moment we’ve shared.',
+    'I hope your 22nd year brings you happiness, success, peace, adventure, and everything your heart wishes for.',
+    'But more than anything, I hope I get to be there beside you, creating many more memories together.',
+    'You deserve the most beautiful things in life.',
+  ],
+  heartMessages: [
+    'A lot ❤️',
+    'More than that…',
+    'Still more…',
+    'Wayyyyy more…',
+    'Okay… it’s impossible to measure ∞',
+    'Infinity isn’t even enough.',
+  ],
+  endingLines: [
+    '22 years ago…',
+    'The world received someone special.',
+    'And somehow…',
+    'Our paths crossed.',
+    'For that…',
+    'I’ll always be grateful.',
+  ],
+};
