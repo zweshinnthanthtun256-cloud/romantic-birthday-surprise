@@ -1,8 +1,8 @@
-# Your 22nd Chapter
+# For Thel Thel Lay — Your 22nd Chapter
 
-A complete romantic birthday experience built with React, Vite, Tailwind CSS, Framer Motion, and Lucide React.
+A personal birthday experience for **Su Lai Yadanar**, from **Zwe Shin Thant Htun**. React, Vite, Tailwind CSS, Framer Motion, and Lucide React.
 
-## Run locally
+## Run
 
 Requires Node.js 20.19+ or 22.12+ and npm.
 
@@ -11,26 +11,46 @@ npm install
 npm run dev
 ```
 
-Create production files with `npm run build`. Preview with `npm run preview`. Deploy `dist` to a static host. No backend or environment variables are required.
+```sh
+npm run build
+npm run preview
+```
 
-## Make it yours
+Deploy the generated `dist` folder to a static host. No backend or environment variables are required. The lockfile uses the WebAssembly implementation of esbuild to support restricted Windows environments; it adds no browser runtime weight.
 
-1. Edit `src/data/siteConfig.js`: her name, your name, birthday, relationship date, letter, music path, hero message, and ending. This experience is written for a 22nd birthday. Changing age also requires revising the ordinal copy and 22 reasons.
-2. Edit `src/data/memories.js`: timeline dates, descriptions, image paths, and photo captions. Add objects to extend the story or gallery.
-3. Edit `src/data/reasons.js`: exactly 22 reveal cards are included.
-4. Replace `public/images/memory1.jpg` through `memory6.jpg` with personal photographs. The included files are abstract color placeholders. Missing images display an elegant fallback. Cards crop with `object-fit: cover`; the lightbox displays the complete photo.
-5. Add a permitted music file at `public/music/our-song.mp3`. No audio file is included. Music starts only after the opening button, fades in, and has pause and volume controls. Missing audio leaves the site usable in silence.
+## Personal details
 
-The roses image is original AI-generated decorative artwork. Names, dates, and memories are editable placeholders. Personalize before sharing.
+Edit `src/data/siteConfig.js` for names, nickname, birthday, relationship date, song title, and messages.
 
-## Included interactions
+- Birthday: November 5, 2004; celebration: November 5, 2026.
+- First meeting: October 2, 2025.
+- The live counter starts at midnight in Yangon (UTC+06:30), explicitly configured in the start timestamp.
+- The number of calendar days from the first meeting to the birthday is calculated in code, not hard-coded.
 
-Opening reveal, animated year/month counters, story timeline, six-image lightbox (arrow keys and Escape), 22 reveal cards, unfolding love letter, growing love heart, 22-candle wish with confetti, secret gift reveal, cinematic ending with skip/replay, active section navigation, and optional music. Candle blowing uses a button; microphone permission is never requested.
+## Add your photos
+
+Replace the abstract gradient placeholders in `public/images` with real photos using these filenames:
+
+- `ngwesaung1.jpg` through `ngwesaung4.jpg` — your beach trip.
+- `her1.jpg`, `her2.jpg`, `her3.jpg` — Su Lai Yadanar.
+- `us1.jpg`, `us2.jpg`, `us3.jpg` — memories together.
+
+Edit captions and paths in `src/data/memories.js`. Missing photos have a styled fallback. The gallery supports a lightbox, arrow keys, and Escape. The roses image is original AI-generated decorative artwork, not a personal photograph.
+
+## Music
+
+Add a permitted copy of **Anyone** at `public/music/our-song.mp3`, or change the path in `siteConfig.js`. No song file is bundled. Music starts only after the opening button, fades in, and has pause and volume controls. The site remains usable without audio.
+
+## Experience
+
+The revised first half includes a pearl-white intro, a cinematic introduction, personal birthday hero, birthday-date dedication, the October 2 beginning, a live relationship counter, a Ngwe Saung Polaroid memory and reveal, and the personal photo gallery.
+
+The original 22 reasons, letter, love-heart interaction, candle wish, secret gift, and ending are retained, with the supplied personal names. The design includes staggered word reveals, a gently tilting hero, floating Polaroids, 3D reason cards, an unfolding letter, a reading-progress line, and heart bursts from the touched control. Reduced-motion users receive static alternatives.
 
 ## Accessibility and performance
 
-Semantic controls, keyboard focus styles, native dialog focus containment and focus return, reduced-motion support, bounded particles, lazy gallery images, responsive layout, and missing-media fallbacks. No analytics or stored personal data. Google Fonts have readable system fallbacks when offline.
+Keyboard controls, native modal focus containment and return, reduced-motion alternatives, a skip control for the cinematic opening, bounded particles, lazy photos, and mobile layouts. Reduced-motion users advance the opening story manually. The live timer does not announce every second to screen readers.
 
-## Publishing
+No analytics or stored personal data. Fonts use Google Fonts with system fallbacks when offline.
 
-The Sites manifest is `.openai/hosting.json`. Sites deployments start private to the owner. Change the site's audience before sending its link to another person. The `dist` folder also works on other static hosting services.
+Sites hosting starts private to the owner. Change the audience before sending a hosted link to someone else. The downloadable source archive omits the account-specific Sites manifest.

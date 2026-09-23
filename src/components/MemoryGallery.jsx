@@ -28,10 +28,10 @@ export default function MemoryGallery() {
   return (
     <section className="section gallery-section" id="memories">
       <SectionHeading
-        eyebrow="02 / LITTLE MOMENTS, BIG FEELINGS"
+        eyebrow="03 / MY FAVORITE LITTLE COLLECTION"
         description="If I could bottle a feeling, it would be these moments with you."
       >
-        My Favorite Memories <em>With You</em>
+        My Favorite <em>Person</em> 🤍
       </SectionHeading>
       <div className="gallery">
         {photos.map((p, i) => (

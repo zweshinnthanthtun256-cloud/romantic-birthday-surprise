@@ -48,9 +48,9 @@ export default function BirthdayWish({ celebrate }) {
       </div>
       <button
         className="button"
-        onClick={() => {
+        onClick={(event) => {
           setOut(true);
-          celebrate();
+          celebrate(event);
         }}
         disabled={out}
       >

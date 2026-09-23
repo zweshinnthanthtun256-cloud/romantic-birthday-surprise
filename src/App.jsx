@@ -1,8 +1,12 @@
 import { useCallback, useRef, useState } from 'react';
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import IntroScreen from './components/IntroScreen';
+import CinematicIntro from './components/CinematicIntro';
+import BirthdayDate from './components/BirthdayDate';
+import RelationshipCounter from './components/RelationshipCounter';
+import BeachMemory from './components/BeachMemory';
+import ReadingProgress from './components/ReadingProgress';
 import Hero from './components/Hero';
-import FloatingHearts from './components/FloatingHearts';
 import StoryTimeline from './components/StoryTimeline';
 import MemoryGallery from './components/MemoryGallery';
 import ReasonsILoveYou from './components/ReasonsILoveYou';
@@ -16,14 +20,23 @@ import ProgressNav from './components/ProgressNav';
 import ConfettiEffect from './components/ConfettiEffect';
 export default function App() {
   const [opened, setOpened] = useState(false),
-    [burst, setBurst] = useState(0);
+    [burst, setBurst] = useState(null);
   const music = useRef(null);
-  const celebrate = useCallback(() => setBurst(Date.now()), []),
-    finish = useCallback(() => setBurst(0), []);
-  const open = () => {
+  const [cinematicDone, setCinematicDone] = useState(false);
+  const finishCinematic = useCallback(() => setCinematicDone(true), []);
+  const celebrate = useCallback((event) => {
+      const rect = event?.currentTarget?.getBoundingClientRect();
+      setBurst({
+        id: performance.now(),
+        x: event?.clientX || (rect ? rect.left + rect.width / 2 : window.innerWidth / 2),
+        y: event?.clientY || (rect ? rect.top + rect.height / 2 : window.innerHeight * 0.65),
+      });
+    }, []),
+    finish = useCallback(() => setBurst(null), []);
+  const open = (event) => {
     music.current?.start();
     setOpened(true);
-    celebrate();
+    celebrate(event);
   };
   return (
     <MotionConfig reducedMotion="user">
@@ -31,6 +44,8 @@ export default function App() {
       <AnimatePresence mode="wait">
         {!opened ? (
           <IntroScreen key="intro" onOpen={open} />
+        ) : !cinematicDone ? (
+          <CinematicIntro key="cinematic" onComplete={finishCinematic} />
         ) : (
           <motion.main
             key="experience"
@@ -41,9 +56,12 @@ export default function App() {
               document.getElementById('birthday-heading')?.focus({ preventScroll: true })
             }
           >
-            <FloatingHearts />
+            <ReadingProgress />
             <Hero />
+            <BirthdayDate />
             <StoryTimeline />
+            <RelationshipCounter />
+            <BeachMemory celebrate={celebrate} />
             <MemoryGallery />
             <ReasonsILoveYou celebrate={celebrate} />
             <LoveLetter />
@@ -55,7 +73,7 @@ export default function App() {
           </motion.main>
         )}
       </AnimatePresence>
-      {burst > 0 && <ConfettiEffect key={burst} id={burst} onDone={finish} />}
+      {burst && <ConfettiEffect key={burst.id} burst={burst} onDone={finish} />}
     </MotionConfig>
   );
 }

@@ -31,22 +31,52 @@ export const memories = [
   },
 ];
 export const photos = [
-  { image: '/images/memory1.jpg', caption: 'The beginning of us', note: 'Where our story began' },
   {
-    image: '/images/memory2.jpg',
-    caption: 'My favorite place is beside you',
-    note: 'A little closer, every day',
-  },
-  { image: '/images/memory3.jpg', caption: 'A day worth keeping', note: 'One for the memory book' },
-  {
-    image: '/images/memory4.jpg',
-    caption: 'The little things',
-    note: 'That turned out to be everything',
+    image: '/images/her1.jpg',
+    caption: 'My favorite person',
+    note: 'My Thel Thel Lay 🤍',
   },
   {
-    image: '/images/memory5.jpg',
-    caption: 'You make ordinary feel magical',
-    note: 'Just us, being us',
+    image: '/images/her2.jpg',
+    caption: 'Cute. Pretty. Very, very pretty.',
+    note: 'My Thel Thel Lay 🤍',
   },
-  { image: '/images/memory6.jpg', caption: 'More of this, please', note: 'To all our tomorrows' },
+  {
+    image: '/images/her3.jpg',
+    caption: 'Thel Thel Lay, being Thel Thel Lay',
+    note: 'My Thel Thel Lay 🤍',
+  },
+  {
+    image: '/images/us1.jpg',
+    caption: 'A little piece of us',
+    note: 'You and me 🤍',
+  },
+  {
+    image: '/images/us2.jpg',
+    caption: 'Beside you is a good place to be',
+    note: 'You and me 🤍',
+  },
+  {
+    image: '/images/us3.jpg',
+    caption: 'More memories with you, please',
+    note: 'You and me 🤍',
+  },
+];
+export const beachPhotos = [
+  {
+    image: '/images/ngwesaung1.jpg',
+    caption: 'The sea, and us',
+  },
+  {
+    image: '/images/ngwesaung2.jpg',
+    caption: 'A day I want to keep',
+  },
+  {
+    image: '/images/ngwesaung3.jpg',
+    caption: 'My favorite view',
+  },
+  {
+    image: '/images/ngwesaung4.jpg',
+    caption: 'Ngwe Saung, with you',
+  },
 ];

@@ -13,9 +13,9 @@ export default function LoveHeart({ celebrate }) {
       </SectionHeading>
       <motion.button
         className="big-heart"
-        onClick={() => {
+        onClick={(event) => {
           setCount((c) => Math.min(c + 1, messages.length));
-          celebrate();
+          celebrate(event);
         }}
         animate={{ scale: 1 + Math.min(count, 6) * 0.055 }}
         whileTap={{ scale: 0.95 }}

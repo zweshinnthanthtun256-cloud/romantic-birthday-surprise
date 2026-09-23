@@ -1,7 +1,7 @@
 export const reasons = [
-  'Your smile, and the way it changes my whole day.',
-  'The way you care, even in the smallest moments.',
-  'Your laugh. Especially when you can’t stop.',
+  'You’re cute. That’s reason number one.',
+  'You’re pretty. Very easy reason number two.',
+  'And you’re very, very pretty. Hehe. 🤍',
   'The kindness you give so effortlessly.',
   'The way you understand me without a word.',
   'Your beautiful, generous heart.',

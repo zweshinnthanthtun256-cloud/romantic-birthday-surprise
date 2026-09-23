@@ -1,11 +1,12 @@
+// Personal details and messages live here. Dates use Yangon time.
 export const siteConfig = {
-  girlfriendName: 'Her Name',
-  boyfriendName: 'Your Name',
+  girlfriendName: 'Su Lai Yadanar',
+  boyfriendName: 'Zwe Shin Thant Htun',
   age: 22,
-  birthday: '',
-  relationshipStartDate: '',
+  birthday: '2004-11-05',
+  relationshipStartDate: '2025-10-02T00:00:00+06:30',
   heroMessage:
-    "Today isn't just another day. It's the day the person who makes my world brighter was born.",
+    'And I’m very happy that somehow, somewhere along the way, I became part of your story.',
   finalMessage: 'You are one of the most beautiful parts of my life.',
   music: '/music/our-song.mp3',
   heroImage: '/images/romantic-roses.jpg',
@@ -31,5 +32,17 @@ export const siteConfig = {
     'Our paths crossed.',
     'For that…',
     'I’ll always be grateful.',
+  ],
+  nickname: 'Thel Thel Lay',
+  celebrationDate: '2026-11-05',
+  timeZone: 'Asia/Yangon',
+  favoriteColor: 'White',
+  songTitle: 'Anyone',
+  openingLines: [
+    'On November 5, 2004…',
+    'Someone very special came into this world.',
+    'I didn’t know her yet.',
+    'I didn’t know that one day…',
+    'She would become such an important part of my life.',
   ],
 };

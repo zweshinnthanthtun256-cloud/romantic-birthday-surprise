@@ -4,6 +4,7 @@ import { Gift, LockKeyhole, Heart, Sparkles } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
 import { SectionHeading } from './Shared';
 import FloatingHearts from './FloatingHearts';
+import AnimatedWords from './AnimatedWords';
 export default function SecretSurprise({ celebrate }) {
   const [open, setOpen] = useState(false);
   return (
@@ -17,13 +18,19 @@ export default function SecretSurprise({ celebrate }) {
             </SectionHeading>
             <div className="gift-card">
               <LockKeyhole size={17} />
-              <Gift size={100} strokeWidth={0.7} />
+              <motion.div
+                className="gift-icon-float"
+                animate={{ y: [0, -8, 0], rotate: [-3, 3, -3] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <Gift size={100} strokeWidth={0.7} />
+              </motion.div>
               <p>Something just for you.</p>
               <button
                 className="button light"
-                onClick={() => {
+                onClick={(event) => {
                   setOpen(true);
-                  celebrate();
+                  celebrate(event);
                 }}
               >
                 Open <Gift size={17} />
@@ -43,7 +50,7 @@ export default function SecretSurprise({ celebrate }) {
             <h2>{siteConfig.finalMessage}</h2>
             <p>And if I had to choose again…</p>
             <h3>
-              I'd still choose <em>you.</em>
+              <AnimatedWords text="I'd still choose" /> <em>you.</em>
             </h3>
             <p>Every single time.</p>
             <div className="love-signature">

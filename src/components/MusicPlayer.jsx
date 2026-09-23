@@ -84,7 +84,7 @@ const MusicPlayer = forwardRef(function MusicPlayer({ visible }, ref) {
           </button>
           {expanded && (
             <div className="music-panel">
-              <span className="eyebrow">OUR SOUNDTRACK</span>
+              <span className="eyebrow">OUR SOUNDTRACK · {siteConfig.songTitle}</span>
               {unavailable ? (
                 <p>Enjoy this little moment in quiet.</p>
               ) : (

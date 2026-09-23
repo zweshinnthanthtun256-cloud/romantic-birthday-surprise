@@ -1482,3 +1482,652 @@ main {
     display: none !important;
   }
 }
+/* Thel Thel Lay: pearl white, blush light, and champagne details. */
+:root {
+  background: #fffdfb;
+  color: #57333f;
+  --wine: #8c455f;
+  --pink: #f6e8eb;
+  --gold: #b3986c;
+}
+body {
+  background: #fffdfb;
+}
+.pearl-intro {
+  background:
+    radial-gradient(ellipse at 20% 30%, #f5dfe870, transparent 50%),
+    radial-gradient(ellipse at 85% 65%, #f9e9d5aa, transparent 50%),
+    linear-gradient(135deg, #fffefd, #fff8fc, #f7ecee);
+  color: #6c4052;
+  background-size: 180% 180%;
+  min-height: 100svh;
+}
+.pearl-intro .eyebrow {
+  color: #9c7b75;
+}
+.pearl-intro .intro-heart {
+  color: #bc8d9d;
+  margin: 32px 0 25px;
+}
+.pearl-intro .intro-sentence {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 29px;
+  color: #9a7381;
+  margin: 0 0 20px;
+}
+.pearl-intro h1 em {
+  color: #895368;
+  font-size: clamp(52px, 7vw, 96px);
+}
+.intro-white-heart {
+  display: block;
+  font-size: 25px;
+  margin: 24px 0 30px;
+}
+.pearl-intro .intro-note {
+  color: #9c8782;
+  margin-top: 48px;
+}
+.pearl-intro .button {
+  background: #99566c;
+  border-color: #99566c;
+  box-shadow: 0 8px 35px #c38a9c29;
+}
+.cinematic-intro {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 30%, #65404e, #291b27);
+  color: #fff2ed;
+  padding: 45px 8%;
+}
+.cinematic-intro > .eyebrow {
+  color: #ccb3a2;
+}
+.cinematic-opening-copy {
+  position: relative;
+  min-height: 330px;
+  width: min(900px, 100%);
+  display: grid;
+  place-items: center;
+}
+.cinematic-opening-copy h2 {
+  font-size: clamp(34px, 4.6vw, 62px);
+  line-height: 1.15;
+}
+.cinematic-opening-copy h1 {
+  font-size: clamp(48px, 6vw, 86px);
+  line-height: 1.1;
+}
+.cinematic-opening-copy p {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #e8c6d0;
+  margin-top: 20px;
+}
+.cinematic-opening-copy svg {
+  margin: 0 auto 25px;
+  color: #e2becb;
+}
+.skip-intro {
+  background: transparent;
+  border: 0;
+  min-height: 44px;
+  color: #c9aab7;
+  font-size: 13px;
+}
+.cinema-progress {
+  display: flex;
+  gap: 8px;
+  margin-top: 35px;
+}
+.cinema-progress span {
+  height: 2px;
+  width: 22px;
+  background: #c39faa30;
+}
+.cinema-progress span.complete {
+  background: #e1bcca;
+}
+.masthead {
+  border-color: #e7dad8;
+}
+.masthead > span:first-child {
+  font-size: 20px;
+}
+.masthead em {
+  font-size: 24px;
+}
+.personal-hero {
+  background: radial-gradient(ellipse at 12% 42%, #f6e6ed55, transparent 50%);
+}
+.personal-hero .birthday-greeting {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 36px;
+  margin: 27px 0 8px;
+  color: #97747b;
+  max-width: none;
+  line-height: 1.2;
+}
+.personal-hero h1 {
+  font-size: clamp(62px, 5.8vw, 86px);
+  line-height: 0.98;
+  margin: 0 0 23px;
+  max-width: 550px;
+  letter-spacing: -0.04em;
+  overflow-wrap: normal;
+}
+.personal-hero h1 em {
+  color: #74475a;
+}
+.personal-hero .nickname {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+  color: #ab7589;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.personal-hero .hero-dedication {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 23px;
+  line-height: 1.45;
+  margin-bottom: 18px;
+  max-width: 380px;
+  color: #765464;
+}
+.personal-hero .hero-personal-note {
+  font-size: 14px;
+  max-width: 390px;
+  line-height: 1.8;
+  color: #9a7e87;
+  margin-bottom: 25px;
+}
+.personal-hero .hero-art > img {
+  filter: brightness(1.04) saturate(0.62);
+}
+.personal-hero .chapter strong {
+  background: linear-gradient(135deg, #fff 15%, #f9eddc 45%, #d3b788 70%, #fff4df);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 32px #4e304b22;
+}
+.personal-hero .chapter em {
+  font-size: 24px;
+  text-shadow: 0 2px 15px #481d2a;
+}
+.personal-hero .image-note {
+  background: #fffdfa;
+  color: #9f7b82;
+}
+.personal-hero .scroll-note {
+  font-size: 10px;
+}
+.birthday-date-section {
+  padding-block: 90px;
+  background: linear-gradient(145deg, #fffefd, #fcf4f5);
+  border-block: 1px solid #f1e4e3;
+}
+.birth-date {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(44px, 7vw, 92px);
+  color: #ad9170;
+  letter-spacing: 0.04em;
+  margin: 24px 0;
+}
+.birth-date span {
+  font-size: 0.4em;
+  vertical-align: middle;
+  margin: 0 0.25em;
+}
+.birthday-date-section h2 {
+  font-size: clamp(37px, 4vw, 55px);
+}
+.birthday-date-section p:not(.birth-date) {
+  color: #947681;
+}
+.date-heart {
+  margin: 28px auto;
+  color: #c094a3;
+}
+.birthday-date-signoff {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 25px;
+}
+.our-beginning {
+  background: #fffdfb;
+}
+.beginning-note {
+  max-width: 720px;
+  margin: 45px auto 0;
+}
+.beginning-marker {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #dbc3c7;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 24px;
+  color: #b98697;
+  box-shadow: 0 0 40px #eed3dd80;
+  animation: heartbeat 4s ease-in-out infinite;
+}
+.beginning-note time {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 39px;
+  color: #a18362;
+  margin-bottom: 28px;
+}
+.beginning-note p {
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+.beginning-note h3 {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 29px;
+  margin: 32px 0 0;
+}
+.beginning-note h3 svg {
+  display: inline;
+  vertical-align: middle;
+  color: #b98697;
+}
+.connecting-line {
+  width: 1px;
+  height: 55px;
+  background: linear-gradient(#dec4c8, #dec4c800);
+  margin: 20px auto;
+}
+.date-connection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #ad9290;
+}
+.date-connection svg {
+  color: #b98b9a;
+}
+.relationship-counter {
+  background: linear-gradient(160deg, #fff9f8, #f6edef);
+  padding-block: 75px;
+}
+.live-counter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 750px;
+  margin: 40px auto 30px;
+  gap: 10px;
+}
+.live-counter > div {
+  border-right: 1px solid #e3cdd3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.live-counter > div:last-child {
+  border: 0;
+}
+.live-counter strong {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(45px, 5vw, 66px);
+  font-weight: 400;
+  color: #9a687b;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.live-counter span {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  color: #a3858d;
+}
+.relationship-counter > p {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.birthday-days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 35px;
+  color: #a28a76;
+}
+.birthday-days strong {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 43px;
+  font-weight: 400;
+}
+.birthday-days span {
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.beach-section {
+  background: linear-gradient(180deg, #f4f9fa, #fcfaf4 55%, #f9eeea);
+  isolation: isolate;
+  overflow: hidden;
+}
+.ocean-light {
+  position: absolute !important;
+  inset: 0;
+  z-index: -1 !important;
+  background:
+    radial-gradient(ellipse at 0% 40%, #bad9e23d, transparent 60%),
+    radial-gradient(ellipse at 95% 55%, #f8cfb73b, transparent 50%);
+  background-size: 150% 150%;
+  animation: gradient-breathe 18s ease-in-out infinite;
+}
+.beach-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 47px;
+  color: #7c9aa2;
+  margin: 15px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.beach-intro {
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+.beach-section p {
+  color: #7c858d;
+}
+.beach-polaroids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1100px;
+  margin: 65px auto 60px;
+  padding: 0 10px;
+}
+.beach-polaroid {
+  background: white;
+  padding: 10px 10px 15px;
+  box-shadow: 0 15px 35px #50616c14;
+  border: 1px solid #eee8e3;
+  rotate: -5deg;
+}
+.beach-polaroid:nth-child(even) {
+  rotate: 5deg;
+  translate: 0 15px;
+}
+.beach-polaroid .photo-surface {
+  height: 255px;
+  background: linear-gradient(155deg, #ebf2f3, #c3d6de);
+}
+.beach-polaroid .photo-fallback {
+  background: linear-gradient(140deg, #edf3f1, #d5dce4, #e4caba);
+  color: #829ba6;
+}
+.beach-polaroid p {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 19px;
+  line-height: 1.4;
+  margin-top: 16px;
+  color: #8895a2;
+}
+.beach-reveal {
+  padding-top: 20px;
+  min-height: 300px;
+}
+.beach-reveal > p {
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.7;
+}
+.beach-reveal-button {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  border: 0;
+  border-bottom: 1px solid #ceb0b6;
+  background: transparent;
+  padding: 15px 20px;
+  margin: 20px auto;
+  color: #a97785;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 36px;
+  min-height: 55px;
+}
+.beach-reveal h3 {
+  font-size: clamp(45px, 5vw, 68px);
+  line-height: 1.12;
+  color: #6d8e9a;
+  margin: 25px 0 20px;
+}
+.beach-reveal h3 em {
+  color: #b57d89;
+}
+.cheesy-note {
+  font-size: 14px;
+  font-style: italic;
+}
+.gallery-section {
+  background: #fffaf8;
+}
+.reasons-section {
+  background: #fffdfb;
+}
+.letter-section {
+  background: #faf1f2;
+}
+.wish-section {
+  background: #faf4ef;
+}
+.cake-age {
+  background: #faf4ef;
+}
+.progress-nav {
+  background: #fffdf9e8;
+}
+.music-toggle {
+  background: #fffdf9e8;
+}
+.reason {
+  background: #fcf4f5;
+  border-color: #eadbdd;
+}
+.reason.revealed {
+  background: #9c6278;
+  border-color: #9c6278;
+}
+.button {
+  border-radius: 4px;
+}
+.section .eyebrow {
+  color: #a18b7c;
+}
+.final-section .eyebrow,
+.surprise-section .eyebrow {
+  color: #d4b2a0;
+}
+@media (max-width: 1024px) {
+  .personal-hero h1 {
+    font-size: 65px;
+  }
+  .personal-hero .birthday-greeting {
+    font-size: 30px;
+  }
+  .beach-polaroids {
+    gap: 15px;
+  }
+  .beach-polaroid .photo-surface {
+    height: 200px;
+  }
+}
+@media (max-width: 760px) {
+  .masthead > span:first-child {
+    font-size: 18px;
+  }
+  .masthead em {
+    font-size: 21px;
+  }
+  .pearl-intro h1 em {
+    font-size: 57px;
+  }
+  .pearl-intro .intro-sentence {
+    font-size: 25px;
+  }
+  .pearl-intro .button {
+    font-size: 13px;
+    padding-inline: 21px;
+  }
+  .pearl-intro .intro-note {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+  .personal-hero {
+    padding-top: 38px;
+  }
+  .personal-hero h1 {
+    font-size: clamp(54px, 13vw, 77px);
+    max-width: 380px;
+  }
+  .personal-hero .birthday-greeting {
+    font-size: 29px;
+    margin-top: 24px;
+  }
+  .personal-hero .nickname {
+    font-size: 27px;
+  }
+  .personal-hero .hero-dedication {
+    font-size: 22px;
+  }
+  .personal-hero .hero-personal-note {
+    font-size: 15px;
+  }
+  .personal-hero .hero-art {
+    height: 440px;
+  }
+  .personal-hero .chapter em {
+    font-size: 22px;
+  }
+  .birth-date {
+    font-size: clamp(38px, 10vw, 60px);
+  }
+  .birthday-date-section {
+    padding-block: 65px;
+  }
+  .birthday-date-signoff {
+    font-size: 22px;
+  }
+  .beginning-note time {
+    font-size: 35px;
+  }
+  .beginning-note h3 {
+    font-size: 27px;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .date-connection {
+    gap: 15px;
+    font-size: 10px;
+  }
+  .live-counter {
+    gap: 0;
+  }
+  .live-counter strong {
+    font-size: 43px;
+  }
+  .live-counter span {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+  .relationship-counter > p {
+    font-size: 23px;
+  }
+  .beach-name {
+    font-size: 38px;
+    gap: 10px;
+  }
+  .beach-intro {
+    font-size: 16px;
+  }
+  .beach-polaroids {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 16px;
+    margin-block: 40px;
+    padding-inline: 5px;
+  }
+  .beach-polaroid {
+    padding: 7px 7px 12px;
+    rotate: -4deg;
+  }
+  .beach-polaroid:nth-child(even) {
+    rotate: 4deg;
+    translate: 0 8px;
+  }
+  .beach-polaroid .photo-surface {
+    height: 170px;
+  }
+  .beach-polaroid p {
+    font-size: 17px;
+    min-height: 42px;
+  }
+  .beach-polaroid .photo-fallback span {
+    font-size: 17px;
+  }
+  .beach-reveal {
+    min-height: 270px;
+  }
+  .cinematic-opening-copy {
+    min-height: 310px;
+  }
+  .cinematic-intro > .eyebrow {
+    font-size: 10px;
+  }
+  .cinematic-opening-copy h1 {
+    font-size: 49px;
+  }
+  .cinematic-opening-copy p {
+    font-size: 27px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .beginning-marker,
+  .ocean-light {
+    animation: none !important;
+  }
+}
+.beach-polaroid {
+  --polaroid-offset: 0px;
+  animation: polaroid-drift 9s ease-in-out infinite;
+}
+.beach-polaroid:nth-child(even) {
+  --polaroid-offset: 8px;
+  animation-delay: -4s;
+}
+@keyframes polaroid-drift {
+  0%,
+  100% {
+    translate: 0 var(--polaroid-offset);
+  }
+  50% {
+    translate: 0 calc(var(--polaroid-offset) - 7px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .beach-polaroid {
+    animation: none !important;
+  }
+}
