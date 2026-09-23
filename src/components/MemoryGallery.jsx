@@ -41,7 +41,7 @@ export default function MemoryGallery() {
               onClick={(e) => open(i, e)}
               aria-label={`Open photo: ${p.caption}`}
             >
-              <Photo src={p.image} alt={p.caption} />
+              <Photo src={p.image} alt={p.alt || p.caption} />
               <span className="gallery-heart">
                 <Heart size={20} />
               </span>

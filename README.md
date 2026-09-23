@@ -29,11 +29,11 @@ Edit `src/data/siteConfig.js` for names, nickname, birthday, relationship date, 
 
 ## Add your photos
 
-Replace the abstract gradient placeholders in `public/images` with real photos using these filenames:
+All 12 supplied Ngwe Saung photographs are included unchanged. The animated beach album displays every photo, and six selected highlights appear in the main memories gallery. Tap any beach photograph to view it fully, swipe left/right on phones, or use arrow keys and Escape.
 
-- `ngwesaung1.jpg` through `ngwesaung4.jpg` — your beach trip.
-- `her1.jpg`, `her2.jpg`, `her3.jpg` — Su Lai Yadanar.
-- `us1.jpg`, `us2.jpg`, `us3.jpg` — memories together.
+- `ngwesaung1.jpg` through `ngwesaung12.jpg` — all 12 real beach-trip photographs.
+- `her1.jpg`, `her2.jpg`, `her3.jpg` — optional placeholder slots for additional portraits.
+- `us1.jpg`, `us2.jpg`, `us3.jpg` — optional placeholder slots for additional memories. The current gallery uses real beach photographs instead.
 
 Edit captions and paths in `src/data/memories.js`. Missing photos have a styled fallback. The gallery supports a lightbox, arrow keys, and Escape. The roses image is original AI-generated decorative artwork, not a personal photograph.
 
@@ -54,3 +54,4 @@ Keyboard controls, native modal focus containment and return, reduced-motion alt
 No analytics or stored personal data. Fonts use Google Fonts with system fallbacks when offline.
 
 Sites hosting starts private to the owner. Change the audience before sending a hosted link to someone else. The downloadable source archive omits the account-specific Sites manifest.
+

@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Heart, Waves } from 'lucide-react';
 import { Reveal, SectionHeading, Photo } from './Shared';
 import { beachPhotos } from '../data/memories';
+import PhotoLightbox from './PhotoLightbox';
 export default function BeachMemory({ celebrate }) {
   const [revealed, setRevealed] = useState(false);
+  const lightbox=useRef(null);
   return (
     <section className="section beach-section" id="ngwe-saung">
       <div className="ocean-light" aria-hidden="true" />
@@ -23,14 +25,15 @@ export default function BeachMemory({ celebrate }) {
         </p>
         <p>Our Ngwe Saung trip is one of those memories for me.</p>
       </Reveal>
+      <p className="beach-album-note">12 little pieces of a trip I’ll always keep. Tap a photo to open it.</p>
       <div className="beach-polaroids">
         {beachPhotos.map((p, i) => (
           <Reveal key={p.image} className={`beach-polaroid polaroid-${i}`}>
-            <Photo src={p.image} alt={p.caption} />
-            <p>{p.caption}</p>
+            <button className="beach-photo-button" onClick={e=>lightbox.current.open(i,e.currentTarget)} aria-label={`Open Ngwe Saung photo ${i+1}: ${p.caption}`}><Photo src={p.image} alt={p.alt||p.caption}/><span className="polaroid-number">{String(i+1).padStart(2,"0")}</span><span className="polaroid-caption">{p.caption}</span></button>
           </Reveal>
         ))}
       </div>
+      <PhotoLightbox ref={lightbox} photos={beachPhotos} label="Ngwe Saung photo memories"/>
       <Reveal className="beach-reveal">
         <p>
           The beach was beautiful.
