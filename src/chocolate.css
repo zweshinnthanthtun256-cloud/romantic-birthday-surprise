@@ -75,3 +75,5 @@ em{color:var(--rose)}
 @keyframes chocolate-hearts{0%{transform:translate3d(0,0,0) rotate(-12deg)}50%{transform:translate3d(var(--heart-drift),-55vh,0) rotate(9deg)}100%{transform:translate3d(0,-115vh,0) rotate(-8deg)}}
 @media(max-width:760px){.floating-hearts>svg:nth-child(n+9){display:none}}
 @media(prefers-reduced-motion:reduce){.intro-white-heart{animation:none}.floating-hearts{display:none}}
+.personal-hero h1 em{color:#f0c3b4}
+.beach-intro p,.relationship-counter>p,.birthday-days strong{color:var(--muted)}
