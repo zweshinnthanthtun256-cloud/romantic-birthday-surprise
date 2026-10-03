@@ -26,6 +26,7 @@ Edit `src/data/siteConfig.js` for names, nickname, birthday, relationship date, 
 - First meeting: October 2, 2025.
 - The live counter starts at midnight in Yangon (UTC+06:30), explicitly configured in the start timestamp.
 - The number of calendar days from the first meeting to the birthday is calculated in code, not hard-coded.
+- Before November 5, 2026 at 12:00 AM Yangon time, visitors see a live days/hours/minutes/seconds countdown. At midnight it changes automatically to an anniversary-date unlock screen. The correct date is configured separately in `siteConfig.js`.
 
 ## Add your photos
 
@@ -43,7 +44,7 @@ Add a permitted copy of **Anyone** at `public/music/our-song.mp3`, or change the
 
 ## Experience
 
-The revised first half includes a pearl-white intro, a cinematic introduction, personal birthday hero, birthday-date dedication, the October 2 beginning, a live relationship counter, a Ngwe Saung Polaroid memory and reveal, and the personal photo gallery.
+The revised first half includes a chocolate-toned intro, a cinematic introduction, personal birthday hero, birthday-date dedication, the October 2 beginning, a live relationship counter, a Ngwe Saung Polaroid memory and reveal, and the personal photo gallery.
 
 The original 22 reasons, letter, love-heart interaction, candle wish, secret gift, and ending are retained, with the supplied personal names. The design includes staggered word reveals, a gently tilting hero, floating Polaroids, 3D reason cards, an unfolding letter, a reading-progress line, and heart bursts from the touched control. Reduced-motion users receive static alternatives.
 

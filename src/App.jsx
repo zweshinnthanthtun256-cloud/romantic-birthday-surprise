@@ -18,8 +18,12 @@ import FinalMessage from './components/FinalMessage';
 import MusicPlayer from './components/MusicPlayer';
 import ProgressNav from './components/ProgressNav';
 import ConfettiEffect from './components/ConfettiEffect';
+import AccessGate from './components/AccessGate';
 export default function App() {
-  const [opened, setOpened] = useState(false),
+  const [accessGranted, setAccessGranted] = useState(
+      () => window.sessionStorage.getItem('birthday-surprise-unlocked') === 'yes',
+    ),
+    [opened, setOpened] = useState(false),
     [burst, setBurst] = useState(null);
   const music = useRef(null);
   const [cinematicDone, setCinematicDone] = useState(false);
@@ -42,7 +46,9 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <MusicPlayer ref={music} visible={opened} />
       <AnimatePresence mode="wait">
-        {!opened ? (
+        {!accessGranted ? (
+          <AccessGate key="access-gate" onUnlock={() => setAccessGranted(true)} />
+        ) : !opened ? (
           <IntroScreen key="intro" onOpen={open} />
         ) : !cinematicDone ? (
           <CinematicIntro key="cinematic" onComplete={finishCinematic} />
