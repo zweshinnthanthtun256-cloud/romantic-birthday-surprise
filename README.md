@@ -27,6 +27,7 @@ Edit `src/data/siteConfig.js` for names, nickname, birthday, relationship date, 
 - The live counter starts at midnight in Yangon (UTC+06:30), explicitly configured in the start timestamp.
 - The number of calendar days from the first meeting to the birthday is calculated in code, not hard-coded.
 - Before November 5, 2026 at 12:00 AM Yangon time, visitors see a live days/hours/minutes/seconds countdown. At midnight it changes automatically to an anniversary-date unlock screen. The correct date is configured separately in `siteConfig.js`.
+- A temporary preview button opens the birthday page directly for testing. It disappears automatically on November 4, 2026 at 12:00 AM Yangon time and does not permanently unlock the countdown.
 
 ## Add your photos
 

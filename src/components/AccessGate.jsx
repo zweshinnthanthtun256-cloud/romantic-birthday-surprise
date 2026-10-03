@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { CalendarDays, Clock3, Heart, LockKeyhole } from 'lucide-react';
+import { CalendarDays, Clock3, Eye, Heart, LockKeyhole } from 'lucide-react';
 import FloatingHearts from './FloatingHearts';
 import { siteConfig } from '../data/siteConfig';
 
@@ -17,15 +17,20 @@ function getTimeLeft(targetTime, now) {
   };
 }
 
-export default function AccessGate({ onUnlock }) {
+export default function AccessGate({ onUnlock, onPreview }) {
   const reduced = useReducedMotion();
   const targetTime = useMemo(() => new Date(siteConfig.revealDateTime).getTime(), []);
+  const previewCutoffTime = useMemo(
+    () => new Date(siteConfig.previewCutoffDateTime).getTime(),
+    [],
+  );
   const [now, setNow] = useState(() => Date.now());
   const [anniversary, setAnniversary] = useState('');
   const [error, setError] = useState('');
   const [attempt, setAttempt] = useState(0);
   const timeLeft = getTimeLeft(targetTime, now);
   const isRevealTime = timeLeft.total === 0;
+  const showPreviewButton = now < previewCutoffTime;
 
   useEffect(() => {
     if (isRevealTime) return undefined;
@@ -94,6 +99,15 @@ export default function AccessGate({ onUnlock }) {
               <span className="pulse-dot" aria-hidden="true" />
               Live countdown · Yangon time
             </p>
+            {showPreviewButton && (
+              <button className="gate-preview-button" type="button" onClick={onPreview}>
+                <Eye size={17} aria-hidden="true" />
+                <span>
+                  Preview birthday page
+                  <small>Testing only · disappears November 4</small>
+                </span>
+              </button>
+            )}
           </motion.div>
         ) : (
           <motion.form

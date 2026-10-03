@@ -42,12 +42,23 @@ export default function App() {
     setOpened(true);
     celebrate(event);
   };
+  const preview = (event) => {
+    music.current?.start();
+    setAccessGranted(true);
+    setOpened(true);
+    setCinematicDone(true);
+    celebrate(event);
+  };
   return (
     <MotionConfig reducedMotion="user">
       <MusicPlayer ref={music} visible={opened} />
       <AnimatePresence mode="wait">
         {!accessGranted ? (
-          <AccessGate key="access-gate" onUnlock={() => setAccessGranted(true)} />
+          <AccessGate
+            key="access-gate"
+            onUnlock={() => setAccessGranted(true)}
+            onPreview={preview}
+          />
         ) : !opened ? (
           <IntroScreen key="intro" onOpen={open} />
         ) : !cinematicDone ? (
