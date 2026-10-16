@@ -37,7 +37,7 @@ export const siteConfig = {
   celebrationDate: '2026-11-05',
   revealDateTime: '2026-11-05T00:00:00+06:30',
   previewCutoffDateTime: '2026-11-04T00:00:00+06:30',
-  anniversaryUnlockDate: '2025-10-02',
+  anniversaryUnlockDate: '2025-10-22',
   timeZone: 'Asia/Yangon',
   favoriteColor: 'White',
   songTitle: 'happy birthday (feat. Acey)',

@@ -24,6 +24,7 @@ Edit `src/data/siteConfig.js` for names, nickname, birthday, relationship date, 
 
 - Birthday: November 5, 2004; celebration: November 5, 2026.
 - First meeting: October 2, 2025.
+- Anniversary and birthday-page unlock date: October 22, 2025.
 - The live counter starts at midnight in Yangon (UTC+06:30), explicitly configured in the start timestamp.
 - The number of calendar days from the first meeting to the birthday is calculated in code, not hard-coded.
 - Before November 5, 2026 at 12:00 AM Yangon time, visitors see a live days/hours/minutes/seconds countdown. At midnight it changes automatically to an anniversary-date unlock screen. The correct date is configured separately in `siteConfig.js`.

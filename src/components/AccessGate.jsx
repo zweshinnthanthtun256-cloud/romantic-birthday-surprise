@@ -45,7 +45,7 @@ export default function AccessGate({ onUnlock, onPreview }) {
       onUnlock();
       return;
     }
-    setError('That date does not match our beginning. Try the day our story started.');
+    setError('That date does not match our anniversary. Try the day we officially became us.');
     setAttempt((value) => value + 1);
   };
 
@@ -123,7 +123,7 @@ export default function AccessGate({ onUnlock, onPreview }) {
             </div>
             <span className="gate-eyebrow">ONLY YOU KNOW THE KEY</span>
             <h1 id="gate-title">One date unlocks our story.</h1>
-            <p>Enter the anniversary date—the day our little beginning became ours.</p>
+            <p>Enter our anniversary date—the day we officially became us.</p>
 
             <motion.div
               className="anniversary-field"
