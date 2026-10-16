@@ -41,7 +41,7 @@ Edit captions and paths in `src/data/memories.js`. Missing photos have a styled 
 
 ## Music
 
-Add a permitted copy of **Anyone** at `public/music/our-song.mp3`, or change the path in `siteConfig.js`. No song file is bundled. Music starts only after the opening button, fades in, and has pause and volume controls. The site remains usable without audio.
+The soundtrack is **happy birthday (feat. Acey)** by **zenithlovesdaisy**, played from the official YouTube source. No copyrighted audio file is copied into the project. Music begins after a visitor interaction and includes play, pause, volume, the official embedded player, and a source link. The site remains usable if the external player is unavailable.
 
 ## Experience
 

@@ -67,6 +67,15 @@ em{color:var(--rose)}
 .progress-nav,.music-toggle,.music-panel{background:#38231df2;border-color:#c6987155;color:#f1ccb0;box-shadow:0 8px 28px #10060566}
 .progress-nav a{color:#e3bca2}.progress-nav a.active{background:#b67868;color:#21130f}
 .music-play{color:#f1ccb0}.music-panel p{color:var(--muted)}
+.music-control.is-hidden{visibility:hidden;pointer-events:none}
+.music-panel{width:290px;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(9px);transition:opacity .25s,visibility .25s,transform .25s}
+.music-panel.expanded{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+.music-title{display:block;margin-top:10px;color:#f4d2bb;font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;font-weight:400;line-height:1.15}
+.music-artist{display:block;margin-top:4px;color:#c6a48d;font-size:12px}
+.music-embed{height:200px;margin-top:15px;overflow:hidden;border:1px solid #c6987144;border-radius:4px;background:#1c100c}
+.music-embed iframe{display:block;width:100%;height:100%;border:0}
+.music-source-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#d9b79e;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.music-panel{width:min(290px,calc(100vw - 28px))}}
 .volume-label input{accent-color:#e3ac95}
 .lightbox::backdrop{background:#1d100bec}.beach-lightbox .lightbox-close{background:#493024}
 .reading-progress{background:linear-gradient(90deg,#bf8168,#edb4ac,#ecc895)}

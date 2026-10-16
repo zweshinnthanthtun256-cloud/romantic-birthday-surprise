@@ -8,7 +8,7 @@ export const siteConfig = {
   heroMessage:
     'And I’m very happy that somehow, somewhere along the way, I became part of your story.',
   finalMessage: 'You are one of the most beautiful parts of my life.',
-  music: '/music/our-song.mp3',
+  musicYouTubeId: 'XZCzok5n-AY',
   heroImage: '/images/romantic-roses.jpg',
   letter: [
     'There are so many things I could say today, but I don’t think words will ever completely explain how much you mean to me.',
@@ -40,7 +40,9 @@ export const siteConfig = {
   anniversaryUnlockDate: '2025-10-02',
   timeZone: 'Asia/Yangon',
   favoriteColor: 'White',
-  songTitle: 'Anyone',
+  songTitle: 'happy birthday (feat. Acey)',
+  songArtist: 'zenithlovesdaisy',
+  songSourceUrl: 'https://www.youtube.com/watch?v=XZCzok5n-AY',
   openingLines: [
     'On November 5, 2004…',
     'Someone very special came into this world.',
