@@ -28,8 +28,9 @@ export default function AccessGate({ onUnlock, onPreview }) {
   const [anniversary, setAnniversary] = useState('');
   const [error, setError] = useState('');
   const [attempt, setAttempt] = useState(0);
+  const [testingVerification, setTestingVerification] = useState(false);
   const timeLeft = getTimeLeft(targetTime, now);
-  const isRevealTime = timeLeft.total === 0;
+  const isRevealTime = timeLeft.total === 0 || testingVerification;
   const showPreviewButton = now < previewCutoffTime;
 
   useEffect(() => {
@@ -41,6 +42,10 @@ export default function AccessGate({ onUnlock, onPreview }) {
   const submit = (event) => {
     event.preventDefault();
     if (anniversary === siteConfig.anniversaryUnlockDate) {
+      if (testingVerification) {
+        onPreview(event);
+        return;
+      }
       window.sessionStorage.setItem('birthday-surprise-unlocked', 'yes');
       onUnlock();
       return;
@@ -100,7 +105,15 @@ export default function AccessGate({ onUnlock, onPreview }) {
               Live countdown · Yangon time
             </p>
             {showPreviewButton && (
-              <button className="gate-preview-button" type="button" onClick={onPreview}>
+              <button
+                className="gate-preview-button"
+                type="button"
+                onClick={() => {
+                  setAnniversary('');
+                  setError('');
+                  setTestingVerification(true);
+                }}
+              >
                 <Eye size={17} aria-hidden="true" />
                 <span>
                   Preview birthday page
@@ -121,7 +134,9 @@ export default function AccessGate({ onUnlock, onPreview }) {
             <div className="gate-seal unlocked" aria-hidden="true">
               <LockKeyhole size={26} strokeWidth={1.2} />
             </div>
-            <span className="gate-eyebrow">ONLY YOU KNOW THE KEY</span>
+            <span className="gate-eyebrow">
+              {testingVerification ? 'VERIFICATION TEST · PREVIEW MODE' : 'ONLY YOU KNOW THE KEY'}
+            </span>
             <h1 id="gate-title">One date unlocks our story.</h1>
             <p>Enter our anniversary date—the day we officially became us.</p>
 
