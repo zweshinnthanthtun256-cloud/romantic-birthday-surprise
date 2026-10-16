@@ -86,3 +86,68 @@ em{color:var(--rose)}
 @media(prefers-reduced-motion:reduce){.intro-white-heart{animation:none}.floating-hearts{display:none}}
 .personal-hero h1 em{color:#f0c3b4}
 .beach-intro p,.relationship-counter>p,.birthday-days strong{color:var(--muted)}
+
+/* Full-viewport layout: keep every chapter flush to the browser width. */
+html,
+body,
+#root,
+main {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+main > header,
+main > section,
+.masthead,
+.hero,
+.section {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.masthead {
+  padding-inline: clamp(24px, 5vw, 96px);
+}
+
+.hero,
+.section {
+  padding-left: clamp(24px, 5vw, 96px);
+  padding-right: clamp(24px, 5vw, 96px);
+}
+
+@media (min-width: 1500px) {
+  .hero,
+  .section {
+    padding-left: clamp(64px, 5vw, 96px);
+    padding-right: clamp(64px, 5vw, 96px);
+  }
+}
+
+@media (max-width: 760px) {
+  .masthead {
+    padding-inline: 20px;
+  }
+
+  .hero,
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .progress-nav {
+    right: max(8px, env(safe-area-inset-right));
+  }
+
+  .music-control {
+    left: max(14px, env(safe-area-inset-left));
+    bottom: max(14px, env(safe-area-inset-bottom));
+  }
+}
