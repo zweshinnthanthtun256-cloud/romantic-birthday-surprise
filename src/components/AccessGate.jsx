@@ -134,9 +134,7 @@ export default function AccessGate({ onUnlock, onPreview }) {
             <div className="gate-seal unlocked" aria-hidden="true">
               <LockKeyhole size={26} strokeWidth={1.2} />
             </div>
-            <span className="gate-eyebrow">
-              {testingVerification ? 'VERIFICATION TEST · PREVIEW MODE' : 'ONLY YOU KNOW THE KEY'}
-            </span>
+            <span className="gate-eyebrow">ONLY YOU KNOW THE KEY</span>
             <h1 id="gate-title">One date unlocks our story.</h1>
             <p>Enter our anniversary date—the day we officially became us.</p>
 
