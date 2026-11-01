@@ -9,7 +9,7 @@ export const siteConfig = {
     'And I’m very happy that somehow, somewhere along the way, I became part of your story.',
   finalMessage: 'You are one of the most beautiful parts of my life.',
   musicYouTubeId: 'XZCzok5n-AY',
-  heroImage: '/images/romantic-roses.jpg',
+  heroImage: '/images/sunflower.jpg',
   letter: [
     'There are so many things I could say today, but I don’t think words will ever completely explain how much you mean to me.',
     'Thank you for every smile, every conversation, every memory, and every little moment we’ve shared.',
