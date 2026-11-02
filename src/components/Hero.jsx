@@ -58,6 +58,7 @@ export default function Hero() {
             >
               22
             </motion.strong>
+            
             <em>a little more beautiful, with you</em>
           </div>
           <span className="hero-date-badge">
