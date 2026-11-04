@@ -83,7 +83,7 @@ export default function AccessGate({ onUnlock, onPreview }) {
               <Clock3 size={27} strokeWidth={1.2} />
             </div>
             <span className="gate-eyebrow">UNTIL YOUR TWENTY-SECOND CHAPTER</span>
-            <h1 id="gate-title">Something beautiful is almost here.</h1>
+            <h1 id="gate-title">Something beautifulsfdf is almost here.</h1>
             <p>This little love letter opens at midnight on your birthday.</p>
 
             <div className="countdown-grid" role="timer" aria-live="off">
